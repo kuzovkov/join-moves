@@ -3,7 +3,7 @@
 
 
 #### Prerequisite
-ffmpeg shoumd be installed in your system
+ffmpeg must be installed in your system
 
 ```bash
 sudo apt install ffmpeg
