@@ -1,4 +1,13 @@
-###Merge video files from IP camera's SD card
+### Merge video files from IP camera's SD card
+
+
+
+#### Prerequisite
+ffmpeg shoumd be installed in your system
+
+```bash
+sudo apt install ffmpeg
+```
 
 put `join.py` for root of day folder
 uncomment line according output format you need (mp4 or mkv)
@@ -7,14 +16,14 @@ uncomment line according output format you need (mp4 or mkv)
 command = 'ffmpeg -f concat -safe 0 -i movies.txt -c:v copy -c:a aac -strict experimental output.mp4'
 ```
 
-####Run script
+#### Run script
 
 ```bash
 chmod a+x join.py
 ./join.py
 ```
 
-####Output example:
+#### Output example:
 ```bash
 user1@kuzovkov-pc:/media/user1/400C8B560C8B45BE/training/20221226$ ./join.py
 Join video /media/user1/400C8B560C8B45BE/training/20221226
