@@ -16,6 +16,7 @@ for hour_dir in hours_dirs:
     if not os.path.isdir(hour_dir):
         continue
     min_dirs = os.listdir(hour_dir)
+    min_dirs.sort()
     for min_dir in  min_dirs:
        if   min_dir in ['.', '..']:
            continue
